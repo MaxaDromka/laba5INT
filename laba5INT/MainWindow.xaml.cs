@@ -11,8 +11,12 @@ namespace laba5INT
         private Dictionary<string, string> books;
         private Dictionary<string, List<string>> chapters;
 
+
+
         public MainWindow()
         {
+            System.Threading.Thread.CurrentThread.CurrentUICulture = System.Globalization.CultureInfo.GetCultureInfo("en-US");
+
             InitializeComponent();
             InitializeBooks();
             PopulateBookList();
